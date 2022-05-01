@@ -5,30 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Twibbon</title>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
     <style type="text/css">
     button, label, canvas, div {
       box-sizing: border-box;
-    }
-
-    body {
-      font-family: monospace;
-      font-size: 14px;
     }
 
     #input-file {
@@ -61,21 +40,13 @@
 
     .frame-option img {
       border-radius: 5px;
-      background-image: url(https://i.ibb.co/rsPnftQ/man.png);
+      background-image: url(man.png);
       background-size: 100% 100%;
       pointer-events: none;
     }
 
     .frame-option:not(:first-child) {
       margin-left: -1px;
-    }
-
-    .wrapper {
-      width: 100%;
-      padding: 10px;
-      max-width: 360px;
-      min-width: 240px;
-      margin: 0 auto;
     }
 
     .action {
@@ -104,7 +75,6 @@
   </head>
   <body>
 
-    <div class="wrapper">
     <label class="action">
       <input type="file" id="input-file" accept="image/*">
       Select Photo
@@ -112,21 +82,20 @@
     <canvas id="preview" width="500" height="500" title="Preview"></canvas><br>
     <div class="buttons">
       <button type="button" class="frame-option">
-        <img src="https://frame.twibbonize.com/814e4043-36e7-4890-adf3-e6647c86a677.png" alt="twiboniedulfitri1443h" width="100%">
+        <img src="814e4043-36e7-4890-adf3-e6647c86a677.png" alt="twiboniedulfitri1443h" width="100%">
       </button>
       <button type="button" class="frame-option">
-        <img src="https://frame.twibbonize.com/35d312dd-9ffb-444a-b988-a1c4de6dfd95.png" alt="idulfitri2022yaaa" width="100%">
+        <img src="35d312dd-9ffb-444a-b988-a1c4de6dfd95.png" alt="idulfitri2022yaaa" width="100%">
       </button>
       <button type="button" class="frame-option">
-        <img src="https://frame.twibbonize.com/926c27df-30e7-40c0-a4db-0be0b44de768.png" alt="idulfitri-2022" width="100%">
+        <img src="926c27df-30e7-40c0-a4db-0be0b44de768.png" alt="idulfitri-2022" width="100%">
       </button>
       <button type="button" class="frame-option">
-        <img src="https://frame.twibbonize.com/c01080d7-901c-460b-b5a5-f5e7d012b44e.png" alt="idulfitri2022yaa" width="100%">
+        <img src="c01080d7-901c-460b-b5a5-f5e7d012b44e.png" alt="idulfitri2022yaa" width="100%">
       </button>
     </div>
     <a download="framed-avatar.png" class="action" id="download-link" href="">Download</a>
-    <img src="https://i.ibb.co/rsPnftQ/man.png" alt="" width="1" id="placeholder" hidden>
-  </div>
+    <img src="man.png" alt="" width="1" id="placeholder" hidden>
 
 <script type="text/javascript">
     const input = document.getElementById('input-file')
